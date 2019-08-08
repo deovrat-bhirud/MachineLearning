@@ -3,8 +3,6 @@ import pylab
 lappiee = pylab.loadtxt('https://s3.amazonaws.com/hr-testcases/399/assets/trainingdata.txt', delimiter=',')
 x_axis = lappiee[:, 0]
 y_axis = lappiee[:, 1]
-print(x_axis)
-print(y_axis)
 n=100
 x_sum =0
 y_sum =0
