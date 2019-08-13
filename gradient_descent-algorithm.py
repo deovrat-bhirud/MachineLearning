@@ -38,3 +38,10 @@ def lsm():
 
 gradie(x,y)
 lsm()
+
+# Output:-
+
+# Gradient Descent Method.
+# 
+# Ordinary Least Square Method.
+# 
