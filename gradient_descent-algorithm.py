@@ -1,7 +1,5 @@
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
-
 
 url="https://raw.githubusercontent.com/akiwelekar/MLModels/master/aimarks2017.csv"
 data = pd.read_csv(url)
@@ -26,7 +24,7 @@ def gradie(x,y):
         
         cost = (1/n) * sum([temp**2 for temp in (y-y_predic)])
         
-        if(i==9999): print ("m= {},    c= {}, cost {}".format(m,c,cost))
+        if(i==9999): print ("slope = {},    constant = {},   cost = {}".format(m,c,cost))
 
 def lsm():
   x=pd.Series(x_axis)
@@ -34,7 +32,7 @@ def lsm():
   r= x.cov(y)/(y.std()*x.std())
   b_1= r*y.std()/x.std()
   b_0= y.mean()-(b_1*x.mean())
-  print ("m= {},   c= {},".format(b_1,b_0))
+  print ("slope = {},   constant = {},".format(b_1,b_0))
 
 gradie(x,y)
 lsm()
@@ -43,5 +41,6 @@ lsm()
 
 # Gradient Descent Method.
 # 
+#        y-intercept
 # Ordinary Least Square Method.
 # 
