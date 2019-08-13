@@ -34,13 +34,18 @@ def lsm():
   b_0= y.mean()-(b_1*x.mean())
   print ("slope = {},   constant = {},".format(b_1,b_0))
 
-gradie(x,y)
 lsm()
+gradie(x,y)
+
 
 # Output:-
 
-# Gradient Descent Method.
-# 
-#        y-intercept
 # Ordinary Least Square Method.
-# 
+# slope = 1.6321516393442619,   y-intercept = 30.6663524590164, 
+
+# Gradient Descent Method.
+# slope = 4.408581734132559,    constant = 0.935694742066278,   cost = 96.0183282956435
+
+# For accurate answer you must increase the umber of iteration or Increase the learning rate.
+# For example if the number of iteration is 10000 And learning rate is 0.009 then Output is
+# slope = 1.6321521129102268,    constant = 30.666347387962162,   cost = 18.797289187067147
